@@ -1,0 +1,97 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1vw;
+  background-color: white;
+  height: 100vh; }
+body .main-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+body .main-div .left-side {
+  width: 57.7083333333%;
+  padding: 6% 11.2% 8% 11.2%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/E:/Prac Website/challenges/base-apparel-coming-soon-master-sollution/assets/images/bg-pattern-desktop.svg"); }
+body .main-div .left-side img {
+  width: 12em; }
+@media only screen and (min-width: 1470px) {
+  body .main-div .left-side img {
+    width: 160px; } }
+body .main-div .left-side h1 {
+  padding-top: 2em;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  width: 80%;
+  color: #ce9797;
+  letter-spacing: 0.45em; }
+@media only screen and (min-width: 1470px) {
+  body .main-div .left-side h1 {
+    font-size: 65px;
+    padding-top: 8.1rem;
+    letter-spacing: 29px; } }
+body .main-div .left-side h1 span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  color: black; }
+body .main-div .left-side p {
+  color: #ce9797;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  width: 95%;
+  font-size: 1.2vw;
+  margin-top: 1.25vw;
+  margin-bottom: 2.5vw;
+  line-height: 1.75em; }
+@media only screen and (min-width: 1700px) {
+  body .main-div .left-side p {
+    font-size: 20.5px; } }
+@media only screen and (max-width: 1050px) {
+  body .main-div .left-side p {
+    font-size: 12.5px; } }
+body .main-div .left-side form {
+  position: relative; }
+body .main-div .left-side form input {
+  width: 90%;
+  height: 7.5vh;
+  border: 1px solid #ce9797;
+  border-radius: 50px;
+  padding: 2vw;
+  color: #ce9797;
+  font-size: 1.1vw;
+  background: transparent; }
+@media only screen and (min-width: 1470px) {
+  body .main-div .left-side form input {
+    font-size: 17px;
+    padding: 29px; } }
+@media only screen and (max-width: 1220px) {
+  body .main-div .left-side form input {
+    height: 4vw;
+    padding: 1vw; } }
+@media only screen and (max-width: 1050px) {
+  body .main-div .left-side form input {
+    font-size: 12px; } }
+body .main-div .left-side form .sub-btn {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 2%;
+  position: absolute;
+  height: 7.5vh;
+  width: 18%;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c); }
+@media only screen and (max-width: 1220px) {
+  body .main-div .left-side form .sub-btn {
+    height: 4vw; } }
+body .main-div .left-side form .sub-btn img {
+  width: auto; }
+body .main-div .right-side {
+  width: 42.2916666667%;
+  background-image: url("/E:/Prac Website/challenges/base-apparel-coming-soon-master-sollution/assets/images/hero-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
