@@ -1,0 +1,256 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-size:1vw;
+	background-color: white;
+	height: 100vh;
+
+	.main-div{
+		width: 100%;
+		
+		display: flex;
+		flex-direction: row;
+		@media only screen and (max-width: 670px){
+				display:grid;
+				grid-template-columns:100%;
+				grid-template-rows:auto auto 1fr;
+				grid-template-areas: "logo" "image" "content"
+			}
+		.mob-logo{
+			display: none;
+			@media only screen and (max-width: 670px){
+				display:block;
+				grid-area:logo;
+				padding: 2rem 1.5rem;
+			}
+			img{
+				min-width: 120px;
+				@media only screen and (max-width: 460px){
+					max-width: 120px;
+				}
+			}
+		}
+		.left-side{
+			width: 57.7083333333%;
+			padding: 6% 11.2% 8% 11.2%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-image: url('https://baseapparelsollution.netlify.app/assets/images/bg-pattern-desktop.svg');
+			@media only screen and (max-width: 670px){
+				grid-area:content;
+                width:100%;
+                padding: 0% 11.2% 8% 11.2%;
+                text-align: center;
+			}
+			@media only screen and (max-width: 360px){
+				padding:0% 0% 8% 0%;
+			}
+             img{
+             	
+             
+             	@media only screen and (min-width: 1470px){
+             		width: 160px;
+             	}
+
+             }
+             .logo{
+             	width: 12em;
+             	min-width: 120px;
+             	@media only screen and (max-width: 670px){
+             		display:none;
+             		
+             	}
+             }
+			h1{
+                padding-top: 2em;
+				font-size: 4.5em;
+                text-transform: uppercase;
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 300;
+                width: 80%;
+                color: hsl(0, 36%, 70%);
+                letter-spacing: 0.45em;
+                @media only screen and (min-width: 1470px){
+                	font-size:65px;
+                	padding-top: 8.1rem;
+                	letter-spacing: 29px;
+                }
+                @media only screen and (max-width: 670px){
+                	font-size:40px;
+                	 width: 100%;
+                }
+                span{
+                	font-family: 'Josefin Sans', sans-serif;
+                    font-weight: 600;
+                    color: black;
+                }
+			}
+			p{
+				color: hsl(0, 36%, 70%);
+			    font-family: 'Josefin Sans', sans-serif;
+                font-weight: 400;
+				width: 95%;
+				font-size: 1.2vw;
+				margin-top: 1.25vw;
+				margin-bottom: 2.5vw;
+                line-height: 1.75em;
+                 @media only screen and (min-width: 1700px){
+                  font-size:20.5px;
+                }
+                @media only screen and (max-width: 1050px){
+                  font-size:15px;
+                }
+                 @media only screen and (max-width: 670px){
+                      padding:2rem 0px;
+                	 width: 100%;
+                }
+
+			}
+			form{
+				position: relative;
+				input{
+					width: 90%;
+					height: 7.5vh;
+					border: 1px solid hsl(0, 36%, 70%);
+					border-radius: 50px;
+					padding: 2vw;
+					color: hsl(0, 36%, 70%);
+					font-size: 1.1vw;
+					background: transparent;
+					outline: none;
+                     &::placeholder{
+                     	color: hsl(0, 36%, 70%);
+                     }
+                      @media only screen and (min-width: 1470px){
+                  		font-size: 17px;
+						padding: 29px;
+						height: 67px;
+                       }
+                       @media only screen and (max-width: 1220px){
+                       	height: 4vw;
+						padding: 1vw;
+
+                       }
+                       @media only screen and (max-width: 1050px){
+                       	font-size:12px;
+                       }
+                       @media only screen and (max-width: 835px){
+                       	min-height: 50px;
+						padding: 12px ;                      
+                    }
+
+                   
+
+
+				}
+				 .error-icon{
+                    	background: hsl(0, 93%, 68%);
+						position: absolute;
+						z-index: 1000;
+						border-radius: 50%;
+						top: 32%;
+						right: 25%;
+						transition: 0.5s;
+						opacity: 0;
+						width: 1.4em;
+						@media only screen and (max-width: 835px){
+							right:35%;
+							width: 16px;
+						}
+						@media only screen and (max-width: 522px){
+							right:28%;
+							width: 16px;
+						}
+						@media only screen and (max-width: 360px){
+							right: 25%;
+							width: 14px;
+							top: 37%;
+						}
+						@media only screen and (max-width: 320px){
+							right: 78%;
+							width: 12px;
+							top: 126%;
+						}
+
+
+
+						
+                    }
+            
+                  
+				.sub-btn{
+					display: grid;
+					align-items: center;
+					justify-content: center;
+					top: 0;
+					right: 2%;
+					border: 0px;
+					position: absolute;
+					height: 7.5vh;
+					width: 20%;
+					border-radius: 50px;
+					box-shadow: 0 10px 30px -5px hsl(0, 36%, 70%);
+					transition: all 0.5s ease;
+					background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+					&:hover{
+						background: linear-gradient(135deg, hsl(0, 100%, 96%), hsl(0, 90%, 84%));
+					}
+					&:active{
+						background: linear-gradient(135deg, hsl(0, 100%, 96%), hsl(0, 90%, 84%));
+					}
+					 @media only screen and (min-width: 1470px){
+                  		padding:0px;
+						height: 67px;
+                       }
+					
+					@media only screen and (max-width: 1220px){
+						height:4vw;
+					}
+					@media only screen and (max-width: 835px){
+                       	height: 50px;
+                        width: 70px;                       
+                    }
+					img{
+						width: auto;
+						position: absolute;
+						right: 40%;
+						@media only screen and (max-width: 830px){
+                       	right:38%;
+                       }
+                       @media only screen and (max-width: 650px){
+                       	right:35%;
+                       }
+                       @media only screen and (max-width: 500px){
+                       	right:33%;
+                       }
+					}
+				}
+			}
+			.error-text{
+				font-size: 12px;
+				font-weight: 600;
+				color: hsl(0, 59%, 72%);
+				padding: 0.8em 2rem;
+				transition: 0.5s;
+				opacity: 0;
+				margin: 0px;
+                width: 100%;
+			}
+			
+
+			
+		}
+		.right-side{
+			width: 42.2916666667%;
+			background-image: url('https://baseapparelsollution.netlify.app/assets/images/hero-desktop.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			@media only screen and (max-width: 670px){
+				grid-area:image;
+				background-image: url('https://baseapparelsollution.netlify.app/assets/images/hero-mobile.jpg');
+                width: 100vw;
+				height: 65vw;
+			}
+		}
+	}
+}
