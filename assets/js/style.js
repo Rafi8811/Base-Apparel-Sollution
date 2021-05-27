@@ -24,8 +24,6 @@ function validation()
       erroricon.style.opacity = "1";
       
 	}
-     if ( email == ""){
-	     return false;
-     }
+   
 
 }
