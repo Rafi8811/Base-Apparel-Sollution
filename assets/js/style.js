@@ -1,6 +1,4 @@
-document.getElementById("btn").addEventListener("click", function(event){
-  event.preventDefault()
-});
+
 function validation()
 {
 	var form = document.getElementById("form");
@@ -24,7 +22,9 @@ function validation()
       errormsg.innerHTML = "Please provide a valid email";
       errormsg.style.opacity = "1";
       erroricon.style.opacity = "1";
-
+     document.getElementById("btn").addEventListener("click", function(event){
+  event.preventDefault()
+});
 	}
 
 }
