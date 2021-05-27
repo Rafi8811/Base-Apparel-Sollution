@@ -1,3 +1,6 @@
+document.getElementById("btn").addEventListener("click", function(event){
+  event.preventDefault()
+});
 function validation()
 {
 	var form = document.getElementById("form");
